@@ -42,3 +42,7 @@ android/app/release
 
 # FVM Version Cache
 .fvm/
+
+# env
+.env
+lib/core/env.g.dart
