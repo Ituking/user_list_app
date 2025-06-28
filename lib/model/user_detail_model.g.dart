@@ -8,11 +8,11 @@ part of 'user_detail_model.dart';
 
 _UserDetailModel _$UserDetailModelFromJson(Map<String, dynamic> json) =>
     _UserDetailModel(
-      name: json['name'] as String,
-      userName: json['userName'] as String,
-      emailAddress: json['emailAddress'] as String,
-      phoneNumber: (json['phoneNumber'] as num).toInt(),
-      webSite: json['webSite'] as String,
+      name: json['name'] as String?,
+      userName: json['userName'] as String?,
+      emailAddress: json['emailAddress'] as String?,
+      phoneNumber: (json['phoneNumber'] as num?)?.toInt(),
+      webSite: json['webSite'] as String?,
     );
 
 Map<String, dynamic> _$UserDetailModelToJson(_UserDetailModel instance) =>

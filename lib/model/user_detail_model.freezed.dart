@@ -15,11 +15,11 @@ T _$identity<T>(T value) => value;
 
 /// @nodoc
 mixin _$UserDetailModel {
-  String get name;
-  String get userName;
-  String get emailAddress;
-  int get phoneNumber;
-  String get webSite;
+  String? get name;
+  String? get userName;
+  String? get emailAddress;
+  int? get phoneNumber;
+  String? get webSite;
 
   /// Create a copy of UserDetailModel
   /// with the given fields replaced by the non-null parameter values.
@@ -65,11 +65,11 @@ abstract mixin class $UserDetailModelCopyWith<$Res> {
       _$UserDetailModelCopyWithImpl;
   @useResult
   $Res call(
-      {String name,
-      String userName,
-      String emailAddress,
-      int phoneNumber,
-      String webSite});
+      {String? name,
+      String? userName,
+      String? emailAddress,
+      int? phoneNumber,
+      String? webSite});
 }
 
 /// @nodoc
@@ -85,33 +85,33 @@ class _$UserDetailModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = null,
-    Object? userName = null,
-    Object? emailAddress = null,
-    Object? phoneNumber = null,
-    Object? webSite = null,
+    Object? name = freezed,
+    Object? userName = freezed,
+    Object? emailAddress = freezed,
+    Object? phoneNumber = freezed,
+    Object? webSite = freezed,
   }) {
     return _then(_self.copyWith(
-      name: null == name
+      name: freezed == name
           ? _self.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      userName: null == userName
+              as String?,
+      userName: freezed == userName
           ? _self.userName
           : userName // ignore: cast_nullable_to_non_nullable
-              as String,
-      emailAddress: null == emailAddress
+              as String?,
+      emailAddress: freezed == emailAddress
           ? _self.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
-              as String,
-      phoneNumber: null == phoneNumber
+              as String?,
+      phoneNumber: freezed == phoneNumber
           ? _self.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as int,
-      webSite: null == webSite
+              as int?,
+      webSite: freezed == webSite
           ? _self.webSite
           : webSite // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -120,24 +120,24 @@ class _$UserDetailModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _UserDetailModel implements UserDetailModel {
   const _UserDetailModel(
-      {required this.name,
-      required this.userName,
-      required this.emailAddress,
-      required this.phoneNumber,
-      required this.webSite});
+      {this.name,
+      this.userName,
+      this.emailAddress,
+      this.phoneNumber,
+      this.webSite});
   factory _UserDetailModel.fromJson(Map<String, dynamic> json) =>
       _$UserDetailModelFromJson(json);
 
   @override
-  final String name;
+  final String? name;
   @override
-  final String userName;
+  final String? userName;
   @override
-  final String emailAddress;
+  final String? emailAddress;
   @override
-  final int phoneNumber;
+  final int? phoneNumber;
   @override
-  final String webSite;
+  final String? webSite;
 
   /// Create a copy of UserDetailModel
   /// with the given fields replaced by the non-null parameter values.
@@ -189,11 +189,11 @@ abstract mixin class _$UserDetailModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String name,
-      String userName,
-      String emailAddress,
-      int phoneNumber,
-      String webSite});
+      {String? name,
+      String? userName,
+      String? emailAddress,
+      int? phoneNumber,
+      String? webSite});
 }
 
 /// @nodoc
@@ -209,33 +209,33 @@ class __$UserDetailModelCopyWithImpl<$Res>
   @override
   @pragma('vm:prefer-inline')
   $Res call({
-    Object? name = null,
-    Object? userName = null,
-    Object? emailAddress = null,
-    Object? phoneNumber = null,
-    Object? webSite = null,
+    Object? name = freezed,
+    Object? userName = freezed,
+    Object? emailAddress = freezed,
+    Object? phoneNumber = freezed,
+    Object? webSite = freezed,
   }) {
     return _then(_UserDetailModel(
-      name: null == name
+      name: freezed == name
           ? _self.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      userName: null == userName
+              as String?,
+      userName: freezed == userName
           ? _self.userName
           : userName // ignore: cast_nullable_to_non_nullable
-              as String,
-      emailAddress: null == emailAddress
+              as String?,
+      emailAddress: freezed == emailAddress
           ? _self.emailAddress
           : emailAddress // ignore: cast_nullable_to_non_nullable
-              as String,
-      phoneNumber: null == phoneNumber
+              as String?,
+      phoneNumber: freezed == phoneNumber
           ? _self.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as int,
-      webSite: null == webSite
+              as int?,
+      webSite: freezed == webSite
           ? _self.webSite
           : webSite // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
