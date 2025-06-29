@@ -8,7 +8,7 @@ abstract class UserDetailModel with _$UserDetailModel {
   const factory UserDetailModel({
     String? name,
     String? userName,
-    String? emailAddress,
+    String? email,
     int? phoneNumber,
     String? webSite,
   }) = _UserDetailModel;

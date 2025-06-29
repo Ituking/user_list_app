@@ -17,7 +17,7 @@ T _$identity<T>(T value) => value;
 mixin _$UserDetailModel {
   String? get name;
   String? get userName;
-  String? get emailAddress;
+  String? get email;
   int? get phoneNumber;
   String? get webSite;
 
@@ -40,8 +40,7 @@ mixin _$UserDetailModel {
             (identical(other.name, name) || other.name == name) &&
             (identical(other.userName, userName) ||
                 other.userName == userName) &&
-            (identical(other.emailAddress, emailAddress) ||
-                other.emailAddress == emailAddress) &&
+            (identical(other.email, email) || other.email == email) &&
             (identical(other.phoneNumber, phoneNumber) ||
                 other.phoneNumber == phoneNumber) &&
             (identical(other.webSite, webSite) || other.webSite == webSite));
@@ -49,12 +48,12 @@ mixin _$UserDetailModel {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType, name, userName, emailAddress, phoneNumber, webSite);
+  int get hashCode =>
+      Object.hash(runtimeType, name, userName, email, phoneNumber, webSite);
 
   @override
   String toString() {
-    return 'UserDetailModel(name: $name, userName: $userName, emailAddress: $emailAddress, phoneNumber: $phoneNumber, webSite: $webSite)';
+    return 'UserDetailModel(name: $name, userName: $userName, email: $email, phoneNumber: $phoneNumber, webSite: $webSite)';
   }
 }
 
@@ -67,7 +66,7 @@ abstract mixin class $UserDetailModelCopyWith<$Res> {
   $Res call(
       {String? name,
       String? userName,
-      String? emailAddress,
+      String? email,
       int? phoneNumber,
       String? webSite});
 }
@@ -87,7 +86,7 @@ class _$UserDetailModelCopyWithImpl<$Res>
   $Res call({
     Object? name = freezed,
     Object? userName = freezed,
-    Object? emailAddress = freezed,
+    Object? email = freezed,
     Object? phoneNumber = freezed,
     Object? webSite = freezed,
   }) {
@@ -100,9 +99,9 @@ class _$UserDetailModelCopyWithImpl<$Res>
           ? _self.userName
           : userName // ignore: cast_nullable_to_non_nullable
               as String?,
-      emailAddress: freezed == emailAddress
-          ? _self.emailAddress
-          : emailAddress // ignore: cast_nullable_to_non_nullable
+      email: freezed == email
+          ? _self.email
+          : email // ignore: cast_nullable_to_non_nullable
               as String?,
       phoneNumber: freezed == phoneNumber
           ? _self.phoneNumber
@@ -120,11 +119,7 @@ class _$UserDetailModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _UserDetailModel implements UserDetailModel {
   const _UserDetailModel(
-      {this.name,
-      this.userName,
-      this.emailAddress,
-      this.phoneNumber,
-      this.webSite});
+      {this.name, this.userName, this.email, this.phoneNumber, this.webSite});
   factory _UserDetailModel.fromJson(Map<String, dynamic> json) =>
       _$UserDetailModelFromJson(json);
 
@@ -133,7 +128,7 @@ class _UserDetailModel implements UserDetailModel {
   @override
   final String? userName;
   @override
-  final String? emailAddress;
+  final String? email;
   @override
   final int? phoneNumber;
   @override
@@ -162,8 +157,7 @@ class _UserDetailModel implements UserDetailModel {
             (identical(other.name, name) || other.name == name) &&
             (identical(other.userName, userName) ||
                 other.userName == userName) &&
-            (identical(other.emailAddress, emailAddress) ||
-                other.emailAddress == emailAddress) &&
+            (identical(other.email, email) || other.email == email) &&
             (identical(other.phoneNumber, phoneNumber) ||
                 other.phoneNumber == phoneNumber) &&
             (identical(other.webSite, webSite) || other.webSite == webSite));
@@ -171,12 +165,12 @@ class _UserDetailModel implements UserDetailModel {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType, name, userName, emailAddress, phoneNumber, webSite);
+  int get hashCode =>
+      Object.hash(runtimeType, name, userName, email, phoneNumber, webSite);
 
   @override
   String toString() {
-    return 'UserDetailModel(name: $name, userName: $userName, emailAddress: $emailAddress, phoneNumber: $phoneNumber, webSite: $webSite)';
+    return 'UserDetailModel(name: $name, userName: $userName, email: $email, phoneNumber: $phoneNumber, webSite: $webSite)';
   }
 }
 
@@ -191,7 +185,7 @@ abstract mixin class _$UserDetailModelCopyWith<$Res>
   $Res call(
       {String? name,
       String? userName,
-      String? emailAddress,
+      String? email,
       int? phoneNumber,
       String? webSite});
 }
@@ -211,7 +205,7 @@ class __$UserDetailModelCopyWithImpl<$Res>
   $Res call({
     Object? name = freezed,
     Object? userName = freezed,
-    Object? emailAddress = freezed,
+    Object? email = freezed,
     Object? phoneNumber = freezed,
     Object? webSite = freezed,
   }) {
@@ -224,9 +218,9 @@ class __$UserDetailModelCopyWithImpl<$Res>
           ? _self.userName
           : userName // ignore: cast_nullable_to_non_nullable
               as String?,
-      emailAddress: freezed == emailAddress
-          ? _self.emailAddress
-          : emailAddress // ignore: cast_nullable_to_non_nullable
+      email: freezed == email
+          ? _self.email
+          : email // ignore: cast_nullable_to_non_nullable
               as String?,
       phoneNumber: freezed == phoneNumber
           ? _self.phoneNumber

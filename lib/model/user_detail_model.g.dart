@@ -10,7 +10,7 @@ _UserDetailModel _$UserDetailModelFromJson(Map<String, dynamic> json) =>
     _UserDetailModel(
       name: json['name'] as String?,
       userName: json['userName'] as String?,
-      emailAddress: json['emailAddress'] as String?,
+      email: json['email'] as String?,
       phoneNumber: (json['phoneNumber'] as num?)?.toInt(),
       webSite: json['webSite'] as String?,
     );
@@ -19,7 +19,7 @@ Map<String, dynamic> _$UserDetailModelToJson(_UserDetailModel instance) =>
     <String, dynamic>{
       'name': instance.name,
       'userName': instance.userName,
-      'emailAddress': instance.emailAddress,
+      'email': instance.email,
       'phoneNumber': instance.phoneNumber,
       'webSite': instance.webSite,
     };
