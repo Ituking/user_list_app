@@ -1,13 +1,14 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'user_detail_model.dart';
+part of 'user_information_model.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_UserDetailModel _$UserDetailModelFromJson(Map<String, dynamic> json) =>
-    _UserDetailModel(
+_UserInformationModel _$UserInformationModelFromJson(
+        Map<String, dynamic> json) =>
+    _UserInformationModel(
       name: json['name'] as String?,
       userName: json['userName'] as String?,
       email: json['email'] as String?,
@@ -15,7 +16,8 @@ _UserDetailModel _$UserDetailModelFromJson(Map<String, dynamic> json) =>
       webSite: json['webSite'] as String?,
     );
 
-Map<String, dynamic> _$UserDetailModelToJson(_UserDetailModel instance) =>
+Map<String, dynamic> _$UserInformationModelToJson(
+        _UserInformationModel instance) =>
     <String, dynamic>{
       'name': instance.name,
       'userName': instance.userName,

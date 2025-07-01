@@ -4,7 +4,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'user_detail_model.dart';
+part of 'user_information_model.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,29 +14,29 @@ part of 'user_detail_model.dart';
 T _$identity<T>(T value) => value;
 
 /// @nodoc
-mixin _$UserDetailModel {
+mixin _$UserInformationModel {
   String? get name;
   String? get userName;
   String? get email;
   int? get phoneNumber;
   String? get webSite;
 
-  /// Create a copy of UserDetailModel
+  /// Create a copy of UserInformationModel
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
-  $UserDetailModelCopyWith<UserDetailModel> get copyWith =>
-      _$UserDetailModelCopyWithImpl<UserDetailModel>(
-          this as UserDetailModel, _$identity);
+  $UserInformationModelCopyWith<UserInformationModel> get copyWith =>
+      _$UserInformationModelCopyWithImpl<UserInformationModel>(
+          this as UserInformationModel, _$identity);
 
-  /// Serializes this UserDetailModel to a JSON map.
+  /// Serializes this UserInformationModel to a JSON map.
   Map<String, dynamic> toJson();
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is UserDetailModel &&
+            other is UserInformationModel &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.userName, userName) ||
                 other.userName == userName) &&
@@ -53,15 +53,15 @@ mixin _$UserDetailModel {
 
   @override
   String toString() {
-    return 'UserDetailModel(name: $name, userName: $userName, email: $email, phoneNumber: $phoneNumber, webSite: $webSite)';
+    return 'UserInformationModel(name: $name, userName: $userName, email: $email, phoneNumber: $phoneNumber, webSite: $webSite)';
   }
 }
 
 /// @nodoc
-abstract mixin class $UserDetailModelCopyWith<$Res> {
-  factory $UserDetailModelCopyWith(
-          UserDetailModel value, $Res Function(UserDetailModel) _then) =
-      _$UserDetailModelCopyWithImpl;
+abstract mixin class $UserInformationModelCopyWith<$Res> {
+  factory $UserInformationModelCopyWith(UserInformationModel value,
+          $Res Function(UserInformationModel) _then) =
+      _$UserInformationModelCopyWithImpl;
   @useResult
   $Res call(
       {String? name,
@@ -72,14 +72,14 @@ abstract mixin class $UserDetailModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserDetailModelCopyWithImpl<$Res>
-    implements $UserDetailModelCopyWith<$Res> {
-  _$UserDetailModelCopyWithImpl(this._self, this._then);
+class _$UserInformationModelCopyWithImpl<$Res>
+    implements $UserInformationModelCopyWith<$Res> {
+  _$UserInformationModelCopyWithImpl(this._self, this._then);
 
-  final UserDetailModel _self;
-  final $Res Function(UserDetailModel) _then;
+  final UserInformationModel _self;
+  final $Res Function(UserInformationModel) _then;
 
-  /// Create a copy of UserDetailModel
+  /// Create a copy of UserInformationModel
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -117,11 +117,11 @@ class _$UserDetailModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _UserDetailModel implements UserDetailModel {
-  const _UserDetailModel(
+class _UserInformationModel implements UserInformationModel {
+  const _UserInformationModel(
       {this.name, this.userName, this.email, this.phoneNumber, this.webSite});
-  factory _UserDetailModel.fromJson(Map<String, dynamic> json) =>
-      _$UserDetailModelFromJson(json);
+  factory _UserInformationModel.fromJson(Map<String, dynamic> json) =>
+      _$UserInformationModelFromJson(json);
 
   @override
   final String? name;
@@ -134,17 +134,18 @@ class _UserDetailModel implements UserDetailModel {
   @override
   final String? webSite;
 
-  /// Create a copy of UserDetailModel
+  /// Create a copy of UserInformationModel
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
-  _$UserDetailModelCopyWith<_UserDetailModel> get copyWith =>
-      __$UserDetailModelCopyWithImpl<_UserDetailModel>(this, _$identity);
+  _$UserInformationModelCopyWith<_UserInformationModel> get copyWith =>
+      __$UserInformationModelCopyWithImpl<_UserInformationModel>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$UserDetailModelToJson(
+    return _$UserInformationModelToJson(
       this,
     );
   }
@@ -153,7 +154,7 @@ class _UserDetailModel implements UserDetailModel {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _UserDetailModel &&
+            other is _UserInformationModel &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.userName, userName) ||
                 other.userName == userName) &&
@@ -170,16 +171,16 @@ class _UserDetailModel implements UserDetailModel {
 
   @override
   String toString() {
-    return 'UserDetailModel(name: $name, userName: $userName, email: $email, phoneNumber: $phoneNumber, webSite: $webSite)';
+    return 'UserInformationModel(name: $name, userName: $userName, email: $email, phoneNumber: $phoneNumber, webSite: $webSite)';
   }
 }
 
 /// @nodoc
-abstract mixin class _$UserDetailModelCopyWith<$Res>
-    implements $UserDetailModelCopyWith<$Res> {
-  factory _$UserDetailModelCopyWith(
-          _UserDetailModel value, $Res Function(_UserDetailModel) _then) =
-      __$UserDetailModelCopyWithImpl;
+abstract mixin class _$UserInformationModelCopyWith<$Res>
+    implements $UserInformationModelCopyWith<$Res> {
+  factory _$UserInformationModelCopyWith(_UserInformationModel value,
+          $Res Function(_UserInformationModel) _then) =
+      __$UserInformationModelCopyWithImpl;
   @override
   @useResult
   $Res call(
@@ -191,14 +192,14 @@ abstract mixin class _$UserDetailModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$UserDetailModelCopyWithImpl<$Res>
-    implements _$UserDetailModelCopyWith<$Res> {
-  __$UserDetailModelCopyWithImpl(this._self, this._then);
+class __$UserInformationModelCopyWithImpl<$Res>
+    implements _$UserInformationModelCopyWith<$Res> {
+  __$UserInformationModelCopyWithImpl(this._self, this._then);
 
-  final _UserDetailModel _self;
-  final $Res Function(_UserDetailModel) _then;
+  final _UserInformationModel _self;
+  final $Res Function(_UserInformationModel) _then;
 
-  /// Create a copy of UserDetailModel
+  /// Create a copy of UserInformationModel
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -209,7 +210,7 @@ class __$UserDetailModelCopyWithImpl<$Res>
     Object? phoneNumber = freezed,
     Object? webSite = freezed,
   }) {
-    return _then(_UserDetailModel(
+    return _then(_UserInformationModel(
       name: freezed == name
           ? _self.name
           : name // ignore: cast_nullable_to_non_nullable
